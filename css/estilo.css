@@ -1,0 +1,568 @@
+/* Patrones Globales */
+
+
+/* Eliminar margen por defecto del BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* header */
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    max-width: 1920px;
+    width: -webkit-fill-available;
+    height: 50px;
+    padding: 0px 20px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Logo */
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+
+/* navigation */
+
+.navigation {
+    overflow: hidden;
+    min-width: 10%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation>a {
+    color: pink;
+}
+
+.link:hover {
+    color: #fb0101;
+}
+
+.link {
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+
+/* containerIcon */
+
+.containerIcon {
+    cursor: pointer;
+}
+
+
+/* icons */
+
+.fa-bars {
+    color: #051b68;
+}
+
+.sectionBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/imgbanner.jpg");
+    min-width: 100%;
+    width: 100%;
+    height: 80vh;
+}
+
+.banner-superior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url("/img/handbagsBanner.jpg");
+    min-width: 100%;
+    width: 100%;
+    height: 30vh;
+}
+
+.banner-superiorvenecia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url("/img/dressesBanner.jpg");
+    background-position-x: center;
+    min-width: 100%;
+    width: 100%;
+    height: 30vh;
+}
+
+.banner-superiorShoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url("/img/shoesBanner.jpg");
+    background-size: cover;
+    min-width: 100%;
+    width: 100%;
+    height: 30vh;
+}
+
+.banner-superiorVestidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url("/img/dressesBanner.jpg");
+    background-size: cover;
+    min-width: 100%;
+    width: 100%;
+    height: 30vh;
+}
+
+
+/* title banner */
+
+.Title {
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 144px;
+    color: #FFFFFF;
+}
+
+.gallery {
+    display: grid;
+    width: 100%;
+    min-width: 80%;
+    max-width: 120px;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    margin: 70px auto;
+    gap: 20px;
+}
+
+.btn-primary {
+    outline: none;
+    border: none;
+    width: 165px;
+    color: #FFFFFF;
+    height: 60px;
+    background: #07C99A;
+    font-family: Antonio;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.cardProducts {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin: 30px auto;
+    width: 100%;
+}
+
+.card button {
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+}
+
+
+/* Tipografía Única: Quicksand */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+form,
+input,
+select,
+textarea,
+option,
+button,
+div {
+    font-family: 'Antonio', sans-serif;
+}
+
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+
+main,
+section,
+aside,
+article,
+figure,
+figcaption,
+nav,
+div {
+    display: block;
+}
+
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    margin: 0;
+}
+
+
+/* Estilo Propio */
+
+
+/* Caja Main */
+
+main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+
+/* separator */
+
+hr {
+    margin: 100px;
+    border: none;
+    background-color: rgb(51, 50, 50);
+    height: 1px;
+}
+
+
+/* Bloque Productos */
+
+main section.bloque-productos {
+    width: 100%;
+    height: auto;
+    margin: 100px auto 75px;
+    float: none;
+    position: relative;
+}
+
+main section.bloque-productos article {
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+main section.bloque-productos article h3 {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    float: none;
+    position: relative;
+    font-size: 3.125em;
+    letter-spacing: -0.015em;
+    padding: 0 12px;
+    font-weight: 400;
+}
+
+main section.bloque-productos article nav {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+main section.bloque-productos article nav a {
+    width: 524px;
+    height: 286px;
+    margin: 12px;
+    float: none;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+}
+
+main section.bloque-productos article nav a span.nombre-producto {
+    width: 90%;
+    height: auto;
+    display: block;
+    float: none;
+    position: absolute;
+    bottom: 70px;
+    left: 5%;
+    z-index: 2;
+    font-size: 3.125em;
+    letter-spacing: -0.015em;
+    padding: 0 12px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    transition: all 0.3s ease-in;
+}
+
+main section.bloque-productos article nav a span.precio-producto {
+    width: 90%;
+    height: auto;
+    display: block;
+    float: none;
+    position: absolute;
+    bottom: 35px;
+    left: 5%;
+    z-index: 2;
+    font-size: 2em;
+    letter-spacing: -0.015em;
+    padding: 0 12px;
+    font-weight: 200;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    transition: all 0.3s ease-in;
+}
+
+main section.bloque-productos article nav a img {
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    float: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+    transition: all 0.3s ease-in;
+}
+
+main section.bloque-productos article nav a:hover {
+    transition: all 0.3s ease-in;
+}
+
+main section.bloque-productos article nav a:hover span.nombre-producto {
+    color: #000;
+    text-shadow: none;
+    transition: all 0.3s ease-in;
+}
+
+main section.bloque-productos article nav a:hover span.precio-producto {
+    color: #333;
+    text-shadow: none;
+    transition: all 0.3s ease-in;
+}
+
+main section.bloque-productos article nav a:hover img {
+    opacity: 0.3;
+    transition: all 0.3s ease-in;
+}
+
+
+/* Bloque Categorías */
+
+main section#bloque-categorias {
+    width: 100%;
+    height: auto;
+    margin: 35px auto 75px;
+    float: none;
+    position: relative;
+}
+
+main section#bloque-categorias nav {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+main section#bloque-categorias nav a {
+    width: 31%;
+    height: 400px;
+    margin: 0 1%;
+    float: none;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+}
+
+main section#bloque-categorias nav a#img-bolsos {
+    background: url('../img/handbag.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+main section#bloque-categorias nav a#img-vestidos {
+    background: url('../img/dresses.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+main section#bloque-categorias nav a#img-zapatos {
+    background: url('../img/shoes.jfif') no-repeat top center;
+    background-size: cover;
+}
+
+main section#bloque-categorias nav a span.nombre-categoria {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 3.125em;
+    line-height: 1em;
+    letter-spacing: 0.035em;
+    padding: 174px 12px;
+    font-weight: 100;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+main section#bloque-categorias nav a span.capa-oscura {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgb(0 0 0 / 35%);
+    transition: all 0.3s ease-in;
+}
+
+main section#bloque-categorias nav a:hover span.nombre-categoria {
+    letter-spacing: 0.095em;
+    color: #999;
+    transition: all 0.3s ease-in;
+}
+
+main section#bloque-categorias nav a:hover span.capa-oscura {
+    background: rgb(0 0 0 / 75%);
+    transition: all 0.3s ease-in;
+}
+
+
+/* Footer */
+
+footer {
+    background: url('../img/bannerfooter.png') no-repeat center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    min-height: 400px;
+    width: 100%;
+    height: min-content;
+    background-size: 100% 100%;
+}
+
+
+/* Zona de Media Queries */
+
+
+/* Tablets */
+
+@media only screen and (max-width: 1199px) {
+    main section.bloque-productos article {
+        width: 80%;
+    }
+    main section.bloque-productos article h3 {
+        text-align: center;
+        padding: 0 12px 10px 12px;
+    }
+    main section.bloque-productos article nav a {
+        width: 100%;
+        height: 286px;
+        margin: 0 auto 25px;
+        display: block;
+        overflow: hidden;
+    }
+    main section.bloque-productos article nav a img {
+        height: 100%;
+    }
+    .sectionBanner {
+        height: 500px;
+    }
+    .Title {
+        font-size: 47px;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    footer {
+        min-height: 100px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    main section#bloque-categorias nav a {
+        width: 96%;
+        margin: 2% auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 699px) {}
+
+
+/* Móviles Grandes */
+
+@media only screen and (max-width: 499px) {
+    main section.bloque-productos article {
+        width: 90%;
+    }
+}
+
+
+/* Móviles Pequeños */
+
+@media only screen and (max-width: 399px) {}
